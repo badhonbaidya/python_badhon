@@ -1,2 +1,3 @@
 car={"model":"m1","color":"red","price":100}
-print=(car['model'])
+for i, j in car.items():
+    print(i,j)
