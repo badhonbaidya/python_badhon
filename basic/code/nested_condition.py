@@ -1,8 +1,8 @@
-name="ab"
-if(len(name)==0):
+name="qqq"
+if(len(name)==2):
     print("failed")
 else:
-    if(len(name)<2):
+    if(len(name)<3):
         print("minimam 2")
     else:
-          print("success")
+        print("success")

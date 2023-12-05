@@ -1,28 +1,26 @@
 
-# list_1=[10,20,30,40,50,50]
 
-# cnt=list_1.count(50)
-# list_2=list_1.copy()
-# print("after copy",list_2)
+list_1= [[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
 
+list_1.insert(2, [9,0,1,2])
+list_1.insert (3, [3,4,5,6])
+list_1.pop(4)
+list_1.pop(-1)
+print(list_1)
 
-# print("number:",cnt)
+even_numbers_list =[]
+odd_numbers_list = []
 
-# list=[10,20,30,40,50]
-# print(list_1)
-# print(len(list_1))
-# # print(list_1[0])
-# print(list_1[3])
+for list in list_1:
+    even_numbers = [num for num in list if num %2==0]
+    odd_numbers = [num for num in list if num %2 !=0]
 
-# len(list)
+    even_numbers_list.append( even_numbers)
+    odd_numbers_list.append( odd_numbers)
 
-# for i in range(len(list)):
-# #     print(i,list[i])
-# for i in list:
-#     print(i)
-list_2=["abcd","efgh"]
-sum=0
-for i in list_2:
-    sum=sum+len(i)
+print("even numbers list:",even_numbers_list)
+print("odd_numbers_list:",odd_numbers_list)
 
-    print(sum)
+sums_list = [sum(list) for list in list_1]
+
+print(sums_list)
